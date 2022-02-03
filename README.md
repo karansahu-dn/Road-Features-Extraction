@@ -1,10 +1,10 @@
 # Road-Features-Extraction
 Road segmentation of satellite imagery
 
-# Install Requirements
+## Install Requirements
 ```pip3 install requirements.txt```
 
-# Folder Structure
+## Folder Structure
 ```
 data/Road
 ├── train
@@ -18,7 +18,7 @@ data/Road
 |   └── output
 ```
 
-#Update config.py
+## Update config.py
 ```
 DATA_DIR = './data/Road/' #dataset directory
 ENCODER = 'efficientnet-b6'
@@ -33,8 +33,8 @@ EPOCHS = 20
 workers = os.cpu_count()
 ```
 
-# Train
+## Train
 ``` python3 train.py ```
 
-# Inference
+## Inference
 ``` python3 demo.py ./data/test/input ./data/test/output ./weights/road_best_ckpt.pth ./result ```
